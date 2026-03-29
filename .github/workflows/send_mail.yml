@@ -1,0 +1,35 @@
+name: Send Emails
+
+on:
+  # This allows the Google Script to trigger it
+  repository_dispatch:
+    types: [trigger-sponsorship-mail]
+  # This allows you to still run it manually from the "Actions" tab
+  workflow_dispatch:
+
+# This environment variable clears the Node.js 20 deprecation warning
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  send-mails:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Run email script
+        env:
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python smtp_script.py
