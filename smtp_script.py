@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 from email.utils import formataddr, make_msgid
 
 # Email credentials
-EMAIL = "archismandandapat.teamkartkgp@gmail.com"
+EMAIL = "nihalsingh.teamkartkgp@gmail.com"
 PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 # Put in the correct csv file name 
@@ -17,13 +17,13 @@ data = pd.read_csv("test_csv.csv")
 
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
-YOUR_NAME = "Archisman Dandapat"
+YOUR_NAME = "Nihal Singh"
 TK_LOGO_URL = "https://imgs.search.brave.com/sv9Okf6sV5Cmz8fLS-RwmJ4UnGHgVvUuETOSC-FziQQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91Z2Mu/cHJvZHVjdGlvbi5s/aW5rdHIuZWUvZTYw/NTFhMTAtMWFiZC00/NWRhLWI4N2QtMzkz/ZDc5MmM5NjE2X3Rl/YW1rYXJ0LWVsZWN0/cmljLWxvZ28td2hp/dGUtc3EucG5nP2lv/PXRydWUmc2l6ZT1h/dmF0YXItdjNfMA"
-YOUR_DEPARTMENT = "Department of Electrical Engineering"
-YOUR_YEAR = "Second"
-YOUR_ROLE_TK = "Electronics Subsystem Member"
-YOUR_CONTACT = "+91 9830023665"
-YOUR_LINKED_IN = "https://www.linkedin.com/in/archisman-dandapat/"
+YOUR_DEPARTMENT = "Department of Bioscience & Biotechnology"
+YOUR_YEAR = "First"
+YOUR_ROLE_TK = "Corporate and Public Relation Subsystem"
+YOUR_CONTACT = "+91 9831647138"
+YOUR_LINKED_IN = "linkedin.com/in/nihal-singh-628215377"
 YOUR_FACEBOOK = "https://www.facebook.com/TeamKART/"
 
 SUBJECT = "Greetings from Indian Institute of Technology Kharagpur."
