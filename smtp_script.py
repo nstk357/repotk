@@ -15,18 +15,22 @@ PASSWORD = os.environ.get("EMAIL_PASSWORD")
 # Put in the correct csv file name 
 data = pd.read_csv("test_csv.csv")
 
+# Add your cc emails here
+CC_EMAILS = [ "cc1@example.com", "cc2@example.com" ] 
+
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
 YOUR_NAME = "Nihal Singh"
 TK_LOGO_URL = "https://imgs.search.brave.com/sv9Okf6sV5Cmz8fLS-RwmJ4UnGHgVvUuETOSC-FziQQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91Z2Mu/cHJvZHVjdGlvbi5s/aW5rdHIuZWUvZTYw/NTFhMTAtMWFiZC00/NWRhLWI4N2QtMzkz/ZDc5MmM5NjE2X3Rl/YW1rYXJ0LWVsZWN0/cmljLWxvZ28td2hp/dGUtc3EucG5nP2lv/PXRydWUmc2l6ZT1h/dmF0YXItdjNfMA"
-YOUR_DEPARTMENT = "Department of Bioscience & Biotechnology"
+YOUR_DEPARTMENT = "Department of Biotechnology"
 YOUR_YEAR = "First"
-YOUR_ROLE_TK = "Corporate and Public Relation Subsystem"
+YOUR_ROLE_TK = "Corporate and Public Relation Subsystem Member"
 YOUR_CONTACT = "+91 9831647138"
 YOUR_LINKED_IN = "linkedin.com/in/nihal-singh-628215377"
 YOUR_FACEBOOK = "https://www.facebook.com/TeamKART/"
 
 SUBJECT = "Greetings from Indian Institute of Technology Kharagpur."
+
 HTML_HEAD = """
 <!DOCTYPE html>
 <html>
@@ -124,7 +128,6 @@ HTML_TAIL="""
 """
 
 def send_emails():
-
     now = datetime.now()
 
     # Format it as DD-MM-YYYY
@@ -144,6 +147,7 @@ def send_emails():
             msg = MIMEMultipart("alternative")
             msg["From"] = formataddr((YOUR_NAME, EMAIL))
             msg["To"] = row["Email"]
+            msg["Cc"] = ", ".join(CC_EMAILS)
             msg["Subject"] = SUBJECT
             msg["Message-ID"] = make_msgid(domain="gmail.com")
 
@@ -151,7 +155,7 @@ def send_emails():
             
             html_content = html_template.format(
                 recipient_name=row['Name'],
-                # company=row['Company'],
+                company=row['Company'], # Fixed: Uncommented this line
                 brochure_link = BROCHURE_URL,
                 tk_logo_url = TK_LOGO_URL,
                 your_name = YOUR_NAME,
@@ -164,7 +168,8 @@ def send_emails():
             )
 
             msg.attach(MIMEText(html_content, "html"))
-            server.sendmail(EMAIL, row["Email"], msg.as_string())
+            recipients = [row["Email"]] + CC_EMAILS
+            server.sendmail(EMAIL, recipients, msg.as_string())
             ist_now = datetime.now() + timedelta(hours=5, minutes=30)
             print(f"Sent email to {row['Email']} at {ist_now.strftime('%H:%M:%S')} IST")
             
@@ -177,3 +182,4 @@ def send_emails():
 
 if __name__ == "__main__":
     send_emails()
+
