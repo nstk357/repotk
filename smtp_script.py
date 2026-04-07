@@ -16,7 +16,7 @@ PASSWORD = os.environ.get("EMAIL_PASSWORD")
 data = pd.read_csv("test_csv.csv")
 
 # Add your cc emails here
-CC_EMAILS = [ "cc1@example.com", "cc2@example.com" ] 
+CC_EMAILS = [ "mohamed.teamkartkgp@gmail.com" ] 
 
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
