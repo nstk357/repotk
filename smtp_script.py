@@ -13,7 +13,7 @@ EMAIL = "nihalsingh.teamkartkgp@gmail.com"
 PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 # Put in the correct csv file name 
-data = pd.read_csv("test_csv.csv")
+data = pd.read_csv("traniee.csv")
 
 # Add your cc emails here
 CC_EMAILS = [ "mohamed.teamkartkgp@gmail.com" ] 
