@@ -85,7 +85,7 @@ HTML_BODY = """
 
         <p>Our primary objective is practical skill development. Students gain real-world exposure to engineering design and project execution—skills that strongly align with CSR goals related to technical education and employability. All technical learnings are documented to ensure long-term impact for future student batches.</p>
 
-        <p>As we undertake this technically intensive project, we are seeking CSR support from organizations whose initiatives focus on education and sustainability. Support from <strong>company</strong> would directly contribute to strengthening hands-on engineering education in India.</p>
+        <p>As we undertake this technically intensive project, we are seeking CSR support from organizations whose initiatives focus on education and sustainability. Support from <strong>{company}</strong> would directly contribute to strengthening hands-on engineering education in India.</p>
 
         <p>We would be grateful for the opportunity to share additional details and explore the potential scope of a CSR collaboration at your convenience.</p>
 """
