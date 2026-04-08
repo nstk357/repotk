@@ -13,7 +13,7 @@ EMAIL = "nihalsingh.teamkartkgp@gmail.com"
 PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 # Put in the correct csv file name 
-data = pd.read_csv("trainee.csv")
+data = pd.read_csv("spons.csv")
 
 # Add your cc emails here
 CC_EMAILS = [ "mohamed.teamkartkgp@gmail.com" ] 
@@ -155,7 +155,7 @@ def send_emails():
             
             html_content = html_template.format(
                 recipient_name=row['Name'],
-                #company=row['Company'], # Fixed: Uncommented this line
+                company=row['Company'], # Fixed: Uncommented this line
                 brochure_link = BROCHURE_URL,
                 tk_logo_url = TK_LOGO_URL,
                 your_name = YOUR_NAME,
