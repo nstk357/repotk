@@ -29,7 +29,7 @@ YOUR_CONTACT = "+91 9831647138"
 YOUR_LINKED_IN = "linkedin.com/in/nihal-singh-628215377"
 YOUR_FACEBOOK = "https://www.facebook.com/TeamKART/"
 
-SUBJECT = "Greetings from Indian Institute of Technology Kharagpur."
+SUBJECT = "Follow-up: Potential partnership with TeamKART, IIT Kharagpur"
 
 HTML_HEAD = """
 <!DOCTYPE html>
@@ -76,19 +76,19 @@ HTML_HEAD = """
 # Template for the body
 HTML_BODY = """
 <body>
-    <div class="content">
-        <p>Dear Sir/Madam,</p>
+<div class="content">
+<p>Dear <strong>{recipient_name}</strong>,</p>
+   <p>I’m following up on my previous note regarding a potential partnership between <span class="highlight">TeamKART</span>, IIT Kharagpur and <strong>{company}</strong>.</p>
 
-        <p>My name is <strong>{your_name}</strong>, and I am a student at <strong>IIT Kharagpur</strong> and a member of our institute’s Formula Student team, <span class="highlight">TeamKART</span>. We are a long-standing student engineering initiative under the Department of Mechanical Engineering (active since 2008), focused on providing hands-on technical education through the complete design and manufacture of Formula-style race cars.</p>
+    <p>I wanted to check if you’ve had a moment to review our sponsorship brochure or if there are any specific technical details regarding our KE-1 electric vehicle project I can provide to help your team evaluate this.</p>
 
-        <p>Over the years, the team has manufactured eight combustion vehicles and participated in eight competitions globally, earning recognition for excellence—including a Top 10 finish at Formula Bharat 2023 and 3rd place in the Cost & Manufacturing Event. Building on this foundation, TeamKART has recently manufactured its first electric vehicle project series (KE-1 and subsequent models) and is currently working on optimizing our powertrain and battery systems.</p>
+    <p>We are particularly interested in how <strong>{company}</strong>’s work might align with our current performance milestones. I’m happy to answer any questions.</p>
 
-        <p>Our primary objective is practical skill development. Students gain real-world exposure to engineering design and project execution—skills that strongly align with CSR goals related to technical education and employability. All technical learnings are documented to ensure long-term impact for future student batches.</p>
-
-        <p>As we undertake this technically intensive project, we are seeking support from institutes and associations whose initiatives focus on manufacturing and sustainability. Support from <strong>{company}</strong> would directly contribute to strengthening hands-on engineering development in India.</p>
-
-        <p>We would be grateful for the opportunity to share additional details and explore the potential scope of a collaboration at your convenience.</p>
+    <p>Best regards,</p>
+</div>
+</body>
 """
+
 
 HTML_TAIL="""
         <p><strong>Kindly refer to:</strong></p>
