@@ -77,7 +77,7 @@ HTML_HEAD = """
 HTML_BODY = """
 <body>
 <div class="content">
-<p>Dear <strong>{Name}</strong>,</p>
+<p>Dear <strong>{recipient_name}</strong>,</p>
    <p>I’m following up on my previous note regarding a potential partnership between <span class="highlight">TeamKART</span>, IIT Kharagpur and <strong>{company}</strong>.</p>
 
     <p>I wanted to check if you’ve had a moment to review our sponsorship brochure or if there are any specific technical details regarding our KE-1 electric vehicle project I can provide to help your team evaluate this.</p>
