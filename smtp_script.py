@@ -13,10 +13,10 @@ EMAIL = "nihalsingh.teamkartkgp@gmail.com"
 PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 # Put in the correct csv file name 
-data = pd.read_csv("spons.csv")
+data = pd.read_csv("trainee.csv")
 
 # Add your cc emails here
-CC_EMAILS = [ "mohamed.teamkartkgp@gmail.com" ] 
+CC_EMAILS = [ "nihalsinghpubg357@gmail.com" ] 
 
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
@@ -77,16 +77,24 @@ HTML_HEAD = """
 HTML_BODY = """
 <body>
     <div class="content">
-        <p>Dear Sir/Madam,</p>
-        <p>My name is <strong>{your_name}</strong>, and I am a student at <strong>IIT Kharagpur</strong> and a member of our institute’s Formula Student team, <span class="highlight">TeamKART</span>. We are a long-standing student engineering initiative under the Department of Mechanical Engineering (active since 2008), focused on providing hands-on technical education through the complete design and manufacture of Formula-style race cars.</p>
+        <p>Dear <strong>{Name}</strong>,</p>
 
-        <p>Over the years, the team has manufactured <strong>eight combustion vehicles</strong> and participated in <strong>three international and five national competitions </strong>, earning recognition for excellence—including a <strong>Top 10 finish at Formula Bharat 2023</strong> and <strong>3rd place in the Cost & Manufacturing Event</strong>. Building on this foundation, TeamKART has recently <strong>manufactured its first electric vehicle project series</strong> (KE-1 and subsequent models) and is currently working on optimizing our powertrain and battery systems.</p>
+        <p>My name is Nihal Singh, a first-year undergraduate student from the Department of Bioscience and Biotechnology at <strong>IIT Kharagpur</strong>, writing to you in my capacity as a Corporate and Public Relation Subsystem Trainee for our institute’s Formula Student team, <span class="highlight">TeamKART</span>.</p>
+        
+        <p>Active since 2008, TeamKART is a premier student engineering initiative focused on the complete design, manufacturing, and testing of Formula-style race cars. Over the years, the team has successfully built <strong>eight combustion vehicles</strong> and participated in <strong>three international and five national competitions</strong>. Our commitment to engineering excellence has earned us notable recognition, including a <strong>Top 10 finish at Formula Bharat 2023</strong> and <strong>3rd place in the Cost & Manufacturing Event</strong>.</p>
 
-        <p>Our primary objective is <strong>practical skill development</strong>. Students gain real-world exposure to engineering design and project execution—skills that strongly align with CSR goals related to technical education and employability. All technical learnings are documented to ensure long-term impact for future student batches.</p>
+        <p>Building on our strong combustion foundation, TeamKART is now pioneering the future of mobility on campus. We recently <strong>manufactured our first electric vehicle project series</strong> (KE-1 and subsequent models) and are aggressively working on optimizing our custom powertrain and battery management systems for the upcoming competitive season.</p>
 
-        <p>As we undertake this technically intensive project, we are seeking <strong>CSR support</strong> from organizations whose initiatives focus on education and sustainability. Support from <strong>{company}</strong> would directly contribute to strengthening hands-on engineering education in India.</p>
+        <p>As a leading organization, <strong>{Company}</strong>’s commitment to innovation strongly aligns with our vision of pushing the boundaries of student engineering. To execute a technically intensive project of this scale, we rely on the backing of industry leaders. We are actively seeking strategic partnerships in the form of:</p>
+        <ul>
+            <li><strong>Monetary Sponsorship:</strong> To fund the research, development, and logistical execution of our latest electric vehicle prototype.</li>
+            <li><strong>In-Kind Support:</strong> Support through the provision of automotive components, raw materials, manufacturing equipment, software licenses, or specialized technical mentorship.</li>
+        </ul>
 
-        <p>We would be grateful for the opportunity to share additional details and explore the potential scope of a CSR collaboration at your convenience.</p>
+        <p>Collaborating with TeamKART offers <strong>{Company}</strong> premium branding real estate on our race car, team apparel, and digital platforms, alongside direct access to a dedicated talent pool of top-tier engineering students at IIT Kharagpur for potential recruitment.</p>
+
+        <p>I would be highly grateful for the opportunity to share our official sponsorship brochure and explore how we can build a mutually beneficial partnership. Please let me know if you might be available for a brief call or meeting at your convenience.</p>
+
 """
 
 
