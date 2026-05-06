@@ -13,10 +13,10 @@ EMAIL = "nihalsingh.teamkartkgp@gmail.com"
 PASSWORD = os.environ.get("EMAIL_PASSWORD")
 
 # Put in the correct csv file name 
-data = pd.read_csv("trainee.csv")
+data = pd.read_csv("spons.csv")
 
 # Add your cc emails here
-CC_EMAILS = [ "nihalsinghpubg357@gmail.com" ] 
+CC_EMAILS = [ "mohamed.teamkartkgp@gmail.com" ] 
 
 # Definitions
 BROCHURE_URL = "https://online.fliphtml5.com/TeamKart/1-Qt2Y/" 
@@ -79,7 +79,7 @@ HTML_BODY = """
     <div class="content">
         <p>Dear <strong>{recipient_name}</strong>,</p>
 
-        <p>My name is Nihal Singh, a first-year undergraduate student from the Department of Bioscience and Biotechnology at <strong>IIT Kharagpur</strong>, writing to you in my capacity as a Corporate and Public Relation Subsystem Trainee for our institute’s Formula Student team, <span class="highlight">TeamKART</span>.</p>
+        <p>My name is Nihal Singh, a first-year undergraduate student at <strong>IIT Kharagpur</strong> and a member of our institute’s Formula Student team, <span class="highlight">TeamKART</span>.</p>
         
         <p>Active since 2008, TeamKART is a premier student engineering initiative focused on the complete design, manufacturing, and testing of Formula-style race cars. Over the years, the team has successfully built <strong>eight combustion vehicles</strong> and participated in <strong>three international and five national competitions</strong>. Our commitment to engineering excellence has earned us notable recognition, including a <strong>Top 10 finish at Formula Bharat 2023</strong> and <strong>3rd place in the Cost & Manufacturing Event</strong>.</p>
 
