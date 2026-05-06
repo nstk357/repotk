@@ -77,7 +77,7 @@ HTML_HEAD = """
 HTML_BODY = """
 <body>
     <div class="content">
-        <p>Dear <strong>{Name}</strong>,</p>
+        <p>Dear <strong>{recipient_name}</strong>,</p>
 
         <p>My name is Nihal Singh, a first-year undergraduate student from the Department of Bioscience and Biotechnology at <strong>IIT Kharagpur</strong>, writing to you in my capacity as a Corporate and Public Relation Subsystem Trainee for our institute’s Formula Student team, <span class="highlight">TeamKART</span>.</p>
         
