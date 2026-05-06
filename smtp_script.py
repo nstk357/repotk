@@ -85,13 +85,13 @@ HTML_BODY = """
 
         <p>Building on our strong combustion foundation, TeamKART is now pioneering the future of mobility on campus. We recently <strong>manufactured our first electric vehicle project series</strong> (KE-1 and subsequent models) and are aggressively working on optimizing our custom powertrain and battery management systems for the upcoming competitive season.</p>
 
-        <p>As a leading organization, <strong>{Company}</strong>’s commitment to innovation strongly aligns with our vision of pushing the boundaries of student engineering. To execute a technically intensive project of this scale, we rely on the backing of industry leaders. We are actively seeking strategic partnerships in the form of:</p>
+        <p>As a leading organization, <strong>{company}</strong>’s commitment to innovation strongly aligns with our vision of pushing the boundaries of student engineering. To execute a technically intensive project of this scale, we rely on the backing of industry leaders. We are actively seeking strategic partnerships in the form of:</p>
         <ul>
             <li><strong>Monetary Sponsorship:</strong> To fund the research, development, and logistical execution of our latest electric vehicle prototype.</li>
             <li><strong>In-Kind Support:</strong> Support through the provision of automotive components, raw materials, manufacturing equipment, software licenses, or specialized technical mentorship.</li>
         </ul>
 
-        <p>Collaborating with TeamKART offers <strong>{Company}</strong> premium branding real estate on our race car, team apparel, and digital platforms, alongside direct access to a dedicated talent pool of top-tier engineering students at IIT Kharagpur for potential recruitment.</p>
+        <p>Collaborating with TeamKART offers <strong>{company}</strong> premium branding real estate on our race car, team apparel, and digital platforms, alongside direct access to a dedicated talent pool of top-tier engineering students at IIT Kharagpur for potential recruitment.</p>
 
         <p>I would be highly grateful for the opportunity to share our official sponsorship brochure and explore how we can build a mutually beneficial partnership. Please let me know if you might be available for a brief call or meeting at your convenience.</p>
 
